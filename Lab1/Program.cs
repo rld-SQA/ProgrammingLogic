@@ -10,13 +10,18 @@ class Program
 
         // Step 2 - Basic Output
         Console.WriteLine("Rich DeLoof, " + "IT-1050 - Programming Logic");
+        Console.WriteLine();
 
         // Step 3 - Declare and Use Variables
         int faveNum = 12;
         string faveProgLang = "C#";
-        double numProgs = 50.0D;
+        double numProgs = 100.0D;
         bool progExp = true;
         Console.WriteLine("My favorite number is " + faveNum);
+        Console.WriteLine("My favorite programming language is " + faveProgLang);
+        Console.WriteLine("The number of programs I've written previously is approximately " + numProgs);
+        Console.WriteLine("Programming experience? " + progExp);
+        Console.WriteLine();
 
         string name = "Rich";
         Console.WriteLine("Hello. " + name + "!");
