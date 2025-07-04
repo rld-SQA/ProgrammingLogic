@@ -84,10 +84,11 @@ class Program
         //Step 9 - Increment and Decrement
         int x = 10;
         Console.WriteLine("Starting value: " + x);
-        int inc = x++;
-        Console.WriteLine("Increment operator results in: " + x);
+        //int inc = x++;
+        Console.WriteLine("Increment operator results in: " + x++);
+        //int x = 10;
         int dec = x--;
-        Console.WriteLine("Decrement operator results in: " + x);
+        Console.WriteLine("Decrement operator results in: " + dec);
 
 
         //The code below was used when setting up the codespace in GitHub, retained here but commented out
