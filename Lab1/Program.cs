@@ -4,11 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Step 1
-        // Name: Rich DeLoof
-        // Title: IT-1050-Lab 1
+        /* Step 1
+        Name: Rich DeLoof
+        Title: IT-1050-Lab 1 */
 
         // Step 2 - Basic Output
+        Console.WriteLine("Step 1 - Basic Output");
         Console.WriteLine("Rich DeLoof, IT-1050 - Programming Logic");
         Console.WriteLine();
 
@@ -82,13 +83,13 @@ class Program
         Console.WriteLine();
 
         //Step 9 - Increment and Decrement
+        Console.WriteLine("Step 9 - Increment and Decrement");
         int x = 10;
         Console.WriteLine("Starting value: " + x);
-        //int inc = x++;
-        Console.WriteLine("Increment operator results in: " + x++);
-        //int x = 10;
-        int dec = x--;
-        Console.WriteLine("Decrement operator results in: " + dec);
+        x++;
+        Console.WriteLine("Increment operator results in: " + x);
+        x--;
+        Console.WriteLine("Decrement operator results in: " + x + " (original value)");   //Decrements 'x' back to its original value
 
 
         //The code below was used when setting up the codespace in GitHub, retained here but commented out
