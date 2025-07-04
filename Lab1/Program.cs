@@ -4,17 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        /* Step 1
-        Name: Rich DeLoof
-        Title: IT-1050-Lab 1 */
+        // Step 1 - Use Comments
+        /* Name: Rich DeLoof
+        Title: IT-1050 - Lab 1 */
 
         // Step 2 - Basic Output
-        Console.WriteLine("Step 1 - Basic Output");
+        Console.WriteLine("Step 2 - Basic Output");
         Console.WriteLine("Rich DeLoof, IT-1050 - Programming Logic");
         Console.WriteLine();
 
         // Step 3 - Declare and Use Variables
-        //Console.WriteLine("Step 2 - Declare and Use Variables");
+        Console.WriteLine("Step 3 - Declare and Use Variables");
         int faveNum = 12;
         string faveProgLang = "C#";
         double numProgs = 100.0D;
@@ -26,11 +26,13 @@ class Program
         Console.WriteLine();
 
         // Step 4 - Use Constants
+        Console.WriteLine("Step 4 - Use Constants");
         const string schoolName = "Tri-C";
         Console.WriteLine("My school is " + schoolName);
         Console.WriteLine();
 
         // Step 5 - Type Casting
+        Console.WriteLine("Step 5 - Type Casting");
         double tcVar = 9.78;
         int toInt = (int)tcVar;
         Console.WriteLine("double: " + tcVar);
@@ -40,14 +42,16 @@ class Program
         Console.WriteLine();
 
         // Step 6 - User Input and Type Conversion
-        //Console.WriteLine("Enter your name:");
-        //string name = Console.ReadLine();
-        //Console.WriteLine("Enter your age:");
-        //int age = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine("Hello " + name + ", " + age + " is a good age!");
-        //Console.WriteLine();
+        Console.WriteLine("Step 6 - User Input and Type Conversion");
+        Console.WriteLine("Enter your name:");
+        string name = Console.ReadLine();
+        Console.WriteLine("Enter your age:");
+        int age = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Hello " + name + ", " + age + " is a good age!");
+        Console.WriteLine();
 
         // Step 7 - Arithmetic Operators
+        Console.WriteLine("Step 7 - Arithmetic Operators");
         int num1 = 27;
         int num2 = 48;
         Console.WriteLine("num1 = " + num1);
@@ -75,6 +79,7 @@ class Program
         Console.WriteLine();
 
         // Step 8 - Floating Point Precision
+        Console.WriteLine("Step 8 - Floating Point Precision");
         float test = 1.123456789F;
         double test1 = 1.123456789D;
         Console.WriteLine("float: " + test);
@@ -89,7 +94,7 @@ class Program
         x++;
         Console.WriteLine("Increment operator results in: " + x);
         x--;
-        Console.WriteLine("Decrement operator results in: " + x + " (original value)");   //Decrements 'x' back to its original value
+        Console.WriteLine("Decrement operator results in: " + x + " (decrements to original value)");   //Decrements 'x' back to its original value
 
 
         //The code below was used when setting up the codespace in GitHub, retained here but commented out
