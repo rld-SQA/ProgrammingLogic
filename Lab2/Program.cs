@@ -1,4 +1,6 @@
-﻿namespace Lab2;
+﻿using System.Security;
+
+namespace Lab2;
 
 class Program
 {
@@ -30,6 +32,34 @@ class Program
         {
             Console.WriteLine("You're good to go!");
         }
+        Console.WriteLine();
 
+        // Part 3: Conditional Logic - Movie Ticket Pricing
+        Console.WriteLine("Lab 2, Part 3: Conditional Logic - Movie Ticket Pricing");
+        Console.WriteLine("Our movie ticket prices are: Under age 5 - free!, Ages 5 to 12 - $5, Ages 13 to 64 - $10, 65 and older - $6");
+        Console.WriteLine("Please enter your age: ");
+        int age = int.Parse(Console.ReadLine());    // Gets the movie-goer's age from console input, using the Parse() method in lieu of the Convert.ToInt32() method 
+
+        if (age < 5)   // Age test for free ticket
+        {
+            Console.WriteLine("Ticket is free!");
+        }
+        else if (5 <= age && age <= 12)    // Age test for child ticket
+        {
+            Console.WriteLine("Child ticket: $5");
+        }
+        else if (13 <= age && age <= 64)   // Age test for standard ticket
+        {
+            Console.WriteLine("Standard ticket: $10");
+        }
+        else if (age >= 65) /* Age test for senior ticket.  An 'else' statement could also be used here as any age 65 or older would fail all preceding age tests and the 'else' condition would be executed.
+                               The 'else if' explicity shows the age test (vs. executing due all previous tests failing) but is it better form to use 'else' as it clearly delineates the end of the comparison chain? */
+        {
+            Console.WriteLine("Senior ticket: $6");
+        }
+        Console.WriteLine();
+
+        // Part 4: Using a Switch Statement
+        Console.WriteLine("Lab 2, Part 4: Using a Switch Statement");
     }
 }
