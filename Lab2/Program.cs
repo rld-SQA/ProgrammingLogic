@@ -53,7 +53,7 @@ class Program
             Console.WriteLine("Standard ticket: $10");
         }
         else if (age >= 65) /* Age test for senior ticket.  An 'else' statement could also be used here as any age 65 or older would fail all preceding age tests and the 'else' condition would be executed.
-                               The 'else if' explicity shows the age test (vs. executing due all previous tests failing) but is it better form to use 'else' as it clearly delineates the end of the comparison chain? */
+                               The 'else if' explicity shows the age test (vs. executing this code block due to all previous tests failing) but is it better form to use 'else' as it clearly delineates the end of the comparison chain? */
         {
             Console.WriteLine("Senior ticket: $6");
         }
@@ -61,5 +61,6 @@ class Program
 
         // Part 4: Using a Switch Statement
         Console.WriteLine("Lab 2, Part 4: Using a Switch Statement");
+        Console.WriteLine("Please enter ")
     }
 }
