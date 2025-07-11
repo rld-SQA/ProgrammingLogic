@@ -36,8 +36,7 @@ class Program
 
         // Part 3: Conditional Logic - Movie Ticket Pricing
         Console.WriteLine("Lab 2, Part 3: Conditional Logic - Movie Ticket Pricing");
-        Console.WriteLine("Our movie ticket prices are: Under age 5 - free!, Ages 5 to 12 - $5, Ages 13 to 64 - $10, 65 and older - $6");
-        Console.WriteLine("Please enter your age: ");
+        Console.WriteLine("Please enter your age for movie ticket pricing: ");
         int age = int.Parse(Console.ReadLine());    // Gets the movie-goer's age from console input, using the Parse() method. as a new learning in lieu of the Convert.ToInt32() method 
 
         if (age < 5)   // Age test for free ticket
@@ -62,6 +61,33 @@ class Program
         //Part 4: Using a Switch Statement
         Console.WriteLine("Lab 2, Part 4: Using a Switch Statement");
         Console.WriteLine("Please enter a day of the week (e.g. 1-7)");
-        int dayNum = int.Parse(Console.ReadLine();
+        int dayNum = int.Parse(Console.ReadLine());
+        switch (dayNum)
+        {
+            case 1:
+                Console.WriteLine("Day number 1 corresponds to Monday");
+                break;
+            case 2:
+                Console.WriteLine("Day number 2 corresponds to Tuesday");
+                break;
+            case 3:
+                Console.WriteLine("Day number 3 corresponds to Wednesday");
+                break;
+            case 4:
+                Console.WriteLine("Day number 4 corresponds to Thursday");
+                break;
+            case 5:
+                Console.WriteLine("Day number 5 corresponds to Friday");
+                break;
+            case 6:
+                Console.WriteLine("Day number 6 corresponds to Saturday");
+                break;
+            case 7:
+                Console.WriteLine("Day number 7 corresponds to Sunday");
+                break;
+            default:
+                Console.WriteLine("Invalid day!");
+                break;
+        }
     }
 }
