@@ -36,58 +36,58 @@ class Program
 
         // Part 3: Conditional Logic - Movie Ticket Pricing
         Console.WriteLine("Lab 2, Part 3: Conditional Logic - Movie Ticket Pricing");
-        Console.WriteLine("Please enter your age for movie ticket pricing: ");
-        int age = int.Parse(Console.ReadLine());    // Gets the movie-goer's age from console input, using the Parse() method. as a new learning in lieu of the Convert.ToInt32() method 
+        Console.WriteLine("Please enter your age for movie ticket pricing:");   // Asks the movie-goer to enter their age in order to calculate the correct ticket price
+        int age = int.Parse(Console.ReadLine());    // Gets the movie-goer's age from console input, using the Parse() method as a new learning in lieu of the Convert.ToInt32() method; stores the movie-goer age in integer variable 'age'
 
-        if (age < 5)   // Age test for free ticket
+        if (age < 5)   // Age test for free ticket (under 5)
         {
-            Console.WriteLine("Ticket is free!");
+            Console.WriteLine("Ticket is free!");   // Displays ticket price if free ticket test is passed
         }
-        else if (5 <= age && age <= 12)    // Age test for child ticket
+        else if (5 <= age && age <= 12)    // Age test for child ticket (between 5 and 12, inclusive)
         {
-            Console.WriteLine("Child ticket: $5");
+            Console.WriteLine("Child ticket: $5");  // Displays ticket price if child ticket test is passed
         }
-        else if (13 <= age && age <= 64)   // Age test for standard ticket
+        else if (13 <= age && age <= 64)   // Age test for standard ticket (between 13 and 64 inclusive)
         {
-            Console.WriteLine("Standard ticket: $10");
+            Console.WriteLine("Standard ticket: $10");  // Displays ticket price if standard ticket test is passed
         }
-        else if (age >= 65) /* Age test for senior ticket.  An 'else' statement could also be used here as any age 65 or older would fail all preceding age tests and the 'else' condition would be executed.
+        else if (age >= 65) /* Age test for senior ticket (65 or older).  An 'else' statement could also be used here as any age 65 or older would fail all preceding age tests and the 'else' condition would be executed.
                                The 'else if' explicity shows the age test (vs. executing this code block due to all previous tests failing) but is it better form to use 'else' as it clearly delineates the end of the comparison chain? */
         {
-            Console.WriteLine("Senior ticket: $6");
+            Console.WriteLine("Senior ticket: $6"); // Displays ticket price if senior ticket test is passed
         }
         Console.WriteLine();
 
         //Part 4: Using a Switch Statement
         Console.WriteLine("Lab 2, Part 4: Using a Switch Statement");
-        Console.WriteLine("Please enter a day of the week (e.g. 1-7)");
-        int dayNum = int.Parse(Console.ReadLine());
-        switch (dayNum)
+        Console.WriteLine("Please enter a weekday number (e.g. 1-7) to calculate the name of the corresponding day:"); //Asks the user to input a weekday number to calculate the corresponding weekday name
+        int dayNum = int.Parse(Console.ReadLine());     // Gets the weekday number from user console input using the Parse() method; stores the weekday number in integer variable 'dayNum'
+        switch (dayNum)     // The 'switch'statement and the corresponding value of the expression ('dayNum' in this case) that is used to compare against any number of 'case' code blocks; the 'case' block, if any, which matches the expression of the value is executed
         {
-            case 1:
-                Console.WriteLine("Day number 1 corresponds to Monday");
-                break;
-            case 2:
-                Console.WriteLine("Day number 2 corresponds to Tuesday");
-                break;
-            case 3:
-                Console.WriteLine("Day number 3 corresponds to Wednesday");
-                break;
-            case 4:
-                Console.WriteLine("Day number 4 corresponds to Thursday");
-                break;
-            case 5:
-                Console.WriteLine("Day number 5 corresponds to Friday");
-                break;
-            case 6:
-                Console.WriteLine("Day number 6 corresponds to Saturday");
-                break;
-            case 7:
-                Console.WriteLine("Day number 7 corresponds to Sunday");
-                break;
-            default:
-                Console.WriteLine("Invalid day!");
-                break;
+            case 1: // Contains the value, in this case 1, of the first case to be compared to the switch value
+                Console.WriteLine("Weekday number 1 corresponds to Monday");    // Code block to be executed if the swith value is 1
+                break;  // Command to break out of the switch block if the switch value is 1
+            case 2: // Contains the value, in this case 2, of the second case to be compared to the switch value
+                Console.WriteLine("Weekday number 2 corresponds to Tuesday");   // Code block to be executed if the switch value is 2
+                break;  // Command to break out of the switch block if the switch value is 2
+            case 3: // Contains the value, in this case 3, of the third case to be compared to the switch value
+                Console.WriteLine("Weekday number 3 corresponds to Wednesday"); // Code block to be executed if the switch value is 3
+                break;  // Command to break out of the switch block if the switch value is 3
+            case 4: // Contains the value, in this case 4, of the fourth case to be compared to the switch value
+                Console.WriteLine("Weekday number 4 corresponds to Thursday");  // Code block to be executed if the switch value is 4
+                break;  // Command to break out of the switch block if the switch value is 4
+            case 5: // Contains the value, in this case 5, of the fifth case to be compared to the switch value
+                Console.WriteLine("Weekday number 5 corresponds to Friday");    // Code block to be executed if the switch value is 5
+                break;  // Command to break out of the switch block if the switch value is 5
+            case 6: // Contains the value, in this case 6, of the sixth case to be compared to the switch value
+                Console.WriteLine("Weekday number 6 corresponds to Saturday");  // Code block to be executed if the switch value is 6
+                break;  // Command to break out of the switch block if the switch value is 6
+            case 7: // Contains the value, in this case 7, of the seventh case to be compared to the switch value
+                Console.WriteLine("Weekday number 7 corresponds to Sunday");    // Code block to be executed if the switch value is 7
+                break;  // Command to break out of the switch block if the switch value is 7
+            default:    // An optional command used to specify code to be executed if there is no case match 
+                Console.WriteLine("Invalid day!");  // Code to be executed if there is no case match above
+                break;  // Command to break out of the switch block at its end
         }
     }
 }
