@@ -24,7 +24,8 @@ class Program
         bool isRaining = true;  // Declare boolean type 'isRaining' with value 'true'
         bool haveUmbrella = false;  // Declare boolean type 'haveUmbrella' with value 'false'
 
-        if (isRaining == true && haveUmbrella == false) // Uses the '&&' (AND) logical operator in a combined expression to evaluate (using the '==' comparison operator) whether or not it is raining (true) AND whether or not someone has an umbrella (false); it is precisely for these two conditions being satisfied that results in the the first block of code after the 'if' being executed.  All other combination of values of balnl and bal result in 
+        if (isRaining == true && haveUmbrella == false) /* Uses the '&&' (AND) logical operator in a combined expression to evaluate (using the '==' comparison operator) whether or not it is raining (true) AND whether or not someone has an umbrella (false);
+        it is precisely for these two conditions being satisfied that results in the the first block of code after the 'if' being executed.  All other combination of values of balnl and bal result in */
         {
             Console.WriteLine("Take an umbrella!"); // The logical result of it is raining, and someone does not have an umbrella.  For the given values of isRaining and haveUmbrella declared above, this will be the code output (confirmed when the program compiled and run)
         }
@@ -47,7 +48,7 @@ class Program
         {
             Console.WriteLine("Child ticket: $5");  // Displays ticket price if child ticket test is passed
         }
-        else if (13 <= age && age <= 64)   // Age test for standard ticket (between 13 and 64 inclusive)
+        else if (13 <= age && age <= 64)   // Age test for standard ticket (between 13 and 64, inclusive)
         {
             Console.WriteLine("Standard ticket: $10");  // Displays ticket price if standard ticket test is passed
         }
