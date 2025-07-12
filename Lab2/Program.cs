@@ -21,17 +21,28 @@ class Program
 
         // Part 2: Boolean Logic
         Console.WriteLine("Lab 2, Part 2: Boolean Logic");
-        bool isRaining = true;  // Declare boolean type 'isRaining' with value 'true'
-        bool haveUmbrella = false;  // Declare boolean type 'haveUmbrella' with value 'false'
+        bool isRaining = true;  // Declare boolean type 'isRaining' with initial value 'true'
+        bool haveUmbrella = false;  // Declare boolean type 'haveUmbrella' with initial value 'false'
 
-        if (isRaining == true && haveUmbrella == false) /* Uses the '&&' (AND) logical operator in a combined expression to evaluate (using the '==' comparison operator) whether or not it is raining (true) AND whether or not someone has an umbrella (false);
-        it is precisely for these two conditions being satisfied that results in the the first block of code after the 'if' being executed.  All other combination of values of balnl and bal result in */
+        Console.WriteLine("Raining? " + isRaining); // Display to console whether or not it is currently raining
+        Console.WriteLine("Have umbrella? " + haveUmbrella);    // Display to console whether or not the person has an umbrella
+
+        // Bonus: the following code block uses a nested loop for practice!
+
+        if (isRaining)  // Acts on the boolean value of 'isRaining'; if true the execution proceeds to the inner loop 'if', but if false the outer loop 'else' code is exectued and the program ends
         {
-            Console.WriteLine("Take an umbrella!"); // The logical result of it is raining, and someone does not have an umbrella.  For the given values of isRaining and haveUmbrella declared above, this will be the code output (confirmed when the program compiled and run)
+            if (haveUmbrella)   // Acts on the boolean value of 'haveUmbrella'; if true the next code block is executed, if false the associated 'else' code block is executed
+            {
+                Console.WriteLine("It's raining, but you have an umbrella...you're good to go!");   // Displays a message for the case where it's raining, but the person has an umbrella
+            }
+            else    // Code block to be executed if the inner 'if' evaluates to false
+            {
+                Console.WriteLine("It's raining, take an umbrella!");   // Displays a message for the case where it's raining, but the person does not have an umbrella
+            }
         }
-        else    // All combination of values other than...will result in the...
+        else    // Code block to be executed if the outer loop 'if' evaluates to false
         {
-            Console.WriteLine("You're good to go!");
+            Console.WriteLine("It's not raining, you're good to go!");  // Displays a message for the case where it is not raining; this will be displayed whether or not the person has an umbrella as the "is it raining?" test is primary
         }
         Console.WriteLine();
 
