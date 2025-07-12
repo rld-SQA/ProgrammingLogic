@@ -19,6 +19,7 @@ class Program
         Console.WriteLine("a > b OR a > c?: " + (a > b || a > c));      // Checks if 'a' is greater than 'b' or 'c' using the '||' (OR) logical operator; returns a value of True or False and prints result
         Console.WriteLine();
 
+
         // Part 2: Boolean Logic
         Console.WriteLine("Lab 2, Part 2: Boolean Logic");
         bool isRaining = true;  // Declare boolean type 'isRaining' with initial value 'true'
@@ -46,6 +47,7 @@ class Program
         }
         Console.WriteLine();
 
+
         // Part 3: Conditional Logic - Movie Ticket Pricing
         Console.WriteLine("Lab 2, Part 3: Conditional Logic - Movie Ticket Pricing");
         Console.WriteLine("Please enter your age for movie ticket pricing:");   // Asks the movie-goer to enter their age in order to calculate the correct ticket price
@@ -69,6 +71,7 @@ class Program
             Console.WriteLine("Senior ticket: $6"); // Displays ticket price if senior ticket test is passed
         }
         Console.WriteLine();
+
 
         //Part 4: Using a Switch Statement
         Console.WriteLine("Lab 2, Part 4: Using a Switch Statement");
