@@ -21,9 +21,35 @@ class Program
 
 
         // Part 2: Boolean Logic
-        Console.WriteLine("Lab 2, Part 2: Boolean Logic");
-        bool isRaining = true;  // Declare boolean type 'isRaining' with initial value 'true'
-        bool haveUmbrella = false;  // Declare boolean type 'haveUmbrella' with initial value 'false'
+        // Uses booleans in a combined expression
+        Console.WriteLine("Lab2, Part 2: Boolean Logic - Using Combined Expression");
+        bool isRaining = true; // Declare boolean type 'isRaining' with initial value 'true'
+        bool haveUmbrella = false; // Declare boolean type 'haveUmbrella' with initial value 'false'
+
+        Console.WriteLine("Raining? " + isRaining);
+        Console.WriteLine("Have umbrella? " + haveUmbrella);
+
+        if (isRaining == true && haveUmbrella == false)     /* Uses the '&&' (AND) logical operator in a combined expression to evaluate (using the '==' comparison operator) to evaluate whether
+                                                                or not it is raining (true) AND whether or not someone has an umbrella (false); it is precisely for these two conditions being
+                                                                satisfied simultaneously that results in the first block of code after the 'if' being executed.  All other combination of values of
+                                                                'israining' and 'haveUmbrella' result in the 'else' code block being executed */
+        {
+            Console.WriteLine("Take an umbrella!");     /* The logical result of, it is raining and, the person does not have an umbrella.  For the given values of 'isRaining' and 'haveUmbrella'
+                                                            declared above, this will be the code output */
+        }
+        else
+        {
+            Console.WriteLine("You're good to go!");    /* All combination of values of 'isRaining' and 'haveUmbrella' other than isRaining = true and haveUmbrella = false, will result in this code block
+                                                            being executed (meaning either it's not raining or it's raining, but the person has an umbrella) */
+        }
+        Console.WriteLine();
+
+
+        // Alternative Part 2: Boolean Logic
+        // Uses nested if statements to take action based on boolean variable values
+        Console.WriteLine("Lab 2, Alternative Part 2: Boolean Logic - Using Nested if");
+        isRaining = true;   // I learned that you cannot re-declare the same variables within the same scope (method or region where variables are used), only assign a new value or declare an entirely new variable with a unique name
+        haveUmbrella = false; // I learned that you cannot re-declare the same variables within the same scope (method or region where variables are used), only assign a new value or declare an entirely new variable with a unique name
 
         Console.WriteLine("Raining? " + isRaining); // Display to console whether or not it is currently raining
         Console.WriteLine("Have umbrella? " + haveUmbrella);    // Display to console whether or not the person has an umbrella
