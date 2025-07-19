@@ -11,20 +11,17 @@ class Program
         // A for loop that prints the numbers from 1 to 10, each on a new line
         Console.WriteLine("Lab 3, Problem 1: Simple For Loop");
         Console.WriteLine("A for loop that prints the numbers from 1 to 10, each on a new line");
-        Console.WriteLine("=========================================================================");
         Console.WriteLine();
 
         for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine(i);
         }
-        Console.WriteLine("=========================================================================");
         Console.WriteLine();
 
 
         // Lab 3, Problem 2: Even Numbers from 1 to 20 (Using Modulus Operator)
         // A for loop that loops from 1 to 20, incrementing by 1 each time; uses an 'if' statement and the modulus operator
-        Console.WriteLine("=========================================================================");
         Console.WriteLine("Lab 3, Problem 2: Even Numbers from 1 to 20 (Using Modulus Operator)");
         Console.WriteLine("Outputs even values from 1 to 20, using a for loop and modulus operator");
         Console.WriteLine();
@@ -36,7 +33,6 @@ class Program
                 Console.WriteLine(j);
             }
         }
-        Console.WriteLine("=========================================================================");
         Console.WriteLine();
 
         /* The code block below does the same thing but using a while loop
@@ -50,7 +46,7 @@ class Program
                 j++;
             }
             Console.WriteLine();
-           */
+        */
 
 
         // Lab 3, Problem 3: While Loop Countdown
@@ -202,10 +198,27 @@ class Program
 
         // Lab 3, Problem 9: Reverse Countdown
         // Uses Array.Reverse() to perform a reverse countdown and display the new order using a for loop
-        Console.WriteLine("===================================");
         Console.WriteLine("Lab 3, Problem 9: Reverse Countdown");
         Console.WriteLine("Uses Array.Reverse() to perform a reverse countdown and display the new order using a for loop");
+        Console.WriteLine();
 
-            
+        int[] numbers = new int[5] { 5, 4, 3, 2, 1 };
+
+        Console.WriteLine("Original Array:");
+        foreach (int number in numbers)
+        {
+            Console.Write(number + " ");
+        }
+        Console.WriteLine();
+
+        Array.Reverse(numbers);
+
+        Console.WriteLine();
+        Console.WriteLine("Reversed array using Array.Reverse():");
+        for (int n = 0; n < 5; n++)
+        {
+            Console.Write(numbers[n] + " ");
+        }
+        Console.WriteLine();         
     }
 }
