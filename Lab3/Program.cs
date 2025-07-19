@@ -11,18 +11,23 @@ class Program
         // A for loop that prints the numbers from 1 to 10, each on a new line
         Console.WriteLine("Lab 3, Problem 1: Simple For Loop");
         Console.WriteLine("A for loop that prints the numbers from 1 to 10, each on a new line");
+        Console.WriteLine("=========================================================================");
+        Console.WriteLine();
 
         for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine(i);
         }
+        Console.WriteLine("=========================================================================");
         Console.WriteLine();
 
 
         // Lab 3, Problem 2: Even Numbers from 1 to 20 (Using Modulus Operator)
         // A for loop that loops from 1 to 20, incrementing by 1 each time; uses an 'if' statement and the modulus operator
+        Console.WriteLine("=========================================================================");
         Console.WriteLine("Lab 3, Problem 2: Even Numbers from 1 to 20 (Using Modulus Operator)");
         Console.WriteLine("Outputs even values from 1 to 20, using a for loop and modulus operator");
+        Console.WriteLine();
 
         for (int j = 1; j < 21; j++)
         {
@@ -31,9 +36,10 @@ class Program
                 Console.WriteLine(j);
             }
         }
+        Console.WriteLine("=========================================================================");
         Console.WriteLine();
 
-        /*
+        /* The code block below does the same thing but using a while loop
             int j = 1;
             while (j < 21)
             {
@@ -51,6 +57,7 @@ class Program
         // This program executes a while loop that prints numbers from 5 down to 1, counting backward (using the decrement operator)
         Console.WriteLine("Lab 3, Problem 3: While Loop Countdown");
         Console.WriteLine("A while loop that prints numbers from 5 down to 1, counting backward (using the decrement operator)");
+        Console.WriteLine();
 
         int k = 5;
         while (k >= 1)
@@ -65,6 +72,7 @@ class Program
         // Uses a while loop to print all multiples of 10 starting at 10 and ending at 1000 (inclusive)
         Console.WriteLine("Lab 3, Problem 4: While Loop - Multiples of 10 from 10 to 1000");
         Console.WriteLine("Uses a while loop to print all multiples of 10 starting at 10 and ending at 1000 (inclusive)");
+        Console.WriteLine();
 
         int l = 10;
         while (l <= 1000)
@@ -79,6 +87,7 @@ class Program
         // Uses a string array and a foreach loop to display the seasons of the year
         Console.WriteLine("Lab 3, Problem 5: Seasons of the Year");
         Console.WriteLine("Uses a string array and a foreach loop to display the seasons of the year");
+        Console.WriteLine();
 
         string[] seasons = new string[4];    /* The array values could also be assigned using {"Spring", "Summer", "Fall", "Winter"}, appended to this initialization line.
                                                 That would be my personal preference as a C# programmer. */
@@ -99,6 +108,7 @@ class Program
         // Creates an array to hold the names of the days of the week.  Asks user to enter a weekday number (e.g., 1-7) and displays the corresponding day name using a switch code block.
         Console.WriteLine("Lab 3, Problem 6: Days of the Week (1-7)");
         Console.WriteLine("Creates an array to hold the names of the days of the week.  Asks user to enter a weekday number (e.g., 1-7) and displays the corresponding day name using a switch code block.");
+        Console.WriteLine();
 
         string[] days = new string[7] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }; // Create and initialize array, and assign values.  The '7' could be omitted in this case
 
@@ -149,8 +159,52 @@ class Program
         authors[1] = "Lenny Delligatti";
         authors[2] = "John Anderson";
 
+        Console.WriteLine();
+        Console.WriteLine("Here is each book title and its corresponding author:");
+        Console.WriteLine();
+
+        for (int m = 0; m < 3; m++)
+        {
+            Console.WriteLine(titles[m] + " by " + authors[m]);
+        }
+        Console.WriteLine();
 
 
+        // Lab 3, Problem 8: Temperature Tracker
+        // Creates an interger array with 5 temperature values.  Uses Array.Sort() to print them in ascending order.  Prints the highest and lowest temperatures
+        Console.WriteLine("Lab 3, Problem 8: Temperature Tracker");
+        Console.WriteLine("Creates an interger array with 5 temperature values (degrees Fahrenheit).  Uses Array.Sort() to print them in ascending order.  Prints the highest and lowest temperatures.");
+        Console.WriteLine();
+
+        int[] temps = new int[5] { 95, 20, 76, 44, 51 };
+
+        Console.WriteLine("Unsorted temperatures (degrees Fahrenheit): ");
+        foreach (int temp in temps)
+        {
+            Console.Write(temp + " ");
+        }
+        Console.WriteLine();
+
+        Array.Sort(temps);
+
+        Console.WriteLine();
+        Console.WriteLine("Temperatures (degrees Fahrenheit) sorted in ascending order:");
+        foreach (int temp in temps)
+        {
+            Console.Write(temp + " ");
+        }
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine("Highest Temperature: " + temps[4] + " degrees Fahrenheit");  // After sorting in ascending order we know that the highest temperature will be the last element of the array
+        Console.WriteLine("Lowest Temperature: " + temps[0] + " degrees Fahrenheit");   // After sorting in ascending order we know that the lowest temperature will be the first element of the array
+        Console.WriteLine();
+
+
+        // Lab 3, Problem 9: Reverse Countdown
+        // Uses Array.Reverse() to perform a reverse countdown and display the new order using a for loop
+        Console.WriteLine("===================================");
+        Console.WriteLine("Lab 3, Problem 9: Reverse Countdown");
+        Console.WriteLine("Uses Array.Reverse() to perform a reverse countdown and display the new order using a for loop");
 
             
     }
