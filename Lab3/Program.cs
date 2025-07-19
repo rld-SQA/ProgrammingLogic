@@ -106,7 +106,7 @@ class Program
         Console.WriteLine("Creates an array to hold the names of the days of the week.  Asks user to enter a weekday number (e.g., 1-7) and displays the corresponding day name using a switch code block.");
         Console.WriteLine();
 
-        string[] days = new string[7] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }; // Create and initialize array, and assign values.  The '7' could be omitted in this case
+        string[] days = new string[7] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }; // Create and initialize array, and assign values.  The '7' could be omitted in this case.
 
         Console.WriteLine("Please enter a weekday number (e.g. 1-7) to display the name of the corresponding day:"); //Asks the user to input a weekday number to display the corresponding weekday name
         int dayNum = int.Parse(Console.ReadLine());     // Gets the weekday number from user console input using the Parse() method; stores the weekday number in integer variable 'dayNum'
