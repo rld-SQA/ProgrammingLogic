@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic;
+﻿using System.Dynamic;
+using Microsoft.VisualBasic;
 
 namespace Lab4;
 
@@ -34,9 +35,18 @@ class Car
     }
 
     // Lab 4, Problem 3: Add a Method with a Return Value; called from Main()
-    public string GetDescription(string descript)
+    public string GetDescription()
     {
-        return $"{year}{color}{model}";
+        return year + " " + color + " " + model;
+    }
+
+    // Lab 4, Problem 4: Add a Method that Updates a Field; called from Main()
+    public void Repaint(string newColor)
+    {
+        color = newColor;
+        Console.WriteLine();
+        Console.WriteLine("The car has been repainted to " + color);
+        Console.WriteLine("Comfirmation that myCar.color has been updated to: " + color);
     }
 }
 
@@ -53,7 +63,12 @@ class Program
         myCar.Display(); // Calling the Display method
         myCar.Start();  // Calling the Start method
         myCar.Drive(50);  // Calling the Drive method
-        myCar.GetDescription(); // Calling the GetDescription method
+
+        string desc = myCar.GetDescription();   // Calls the GetDescription method and stores the returned string in the variable 'desc'
+        Console.WriteLine();
+        Console.WriteLine(desc);    // Prints the variable with the stored return value
+
+        myCar.Repaint("red");   // Calls the Repaint method to change the car color, and confirm that the color field has been updated
     }
         
         /* The code block below inserted here to run two test cases for Discussion 4 - Software Testing
