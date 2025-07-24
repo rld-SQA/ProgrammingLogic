@@ -43,10 +43,10 @@ class Car
     // Lab 4, Problem 4: Add a Method that Updates a Field; called from Main()
     public void Repaint(string newColor)
     {
-        color = newColor;
+        color = newColor;   // Updates myCar.color to a new color
         Console.WriteLine();
-        Console.WriteLine("The car has been repainted to " + color);
-        Console.WriteLine("Comfirmation that myCar.color has been updated to: " + color);
+        Console.WriteLine("The car has been repainted to " + color);    // Prints the new car color
+        Console.WriteLine("Comfirmation that myCar.color has been updated to: " + color);   // Prints myCar.color to confirm that it has been updated
     }
 }
 
