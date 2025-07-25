@@ -45,9 +45,9 @@ class Car
     // Lab 4, Problem 4: Add a Method that Updates a Field; called from Main()
     public void Repaint(string newColor)
     {
-        color = newColor;   // Updates myCar.color to a new color, sent in by the user     
+        color = newColor;   // Updates the color field to a new color, sent in by the user     
         Console.WriteLine();
-        Console.WriteLine("The car has been repainted to " + color);    // Prints the confirmation message that the color field has been updated
+        Console.WriteLine("The car has been repainted to " + color + ".");    // Prints the confirmation message that the color field has been updated
     }
 }
 
@@ -71,8 +71,8 @@ class Program
         Console.WriteLine();
         Console.WriteLine(desc);    // Prints the variable 'desc' containing the stored return value
 
-        myCar.Repaint("red");   // Calls the Repaint method to change the car color, and confirm that the color field has been updated
-        Console.WriteLine("Test in Main() that the color field has been updated: myCar.color now = " + myCar.color);     // Tests in Main() that myCar.color has been updated
+        myCar.Repaint("red");   // Calls the Repaint method, with argument 'red', to change the car color, and confirm that the color field has been updated
+        Console.WriteLine("Test in Main() that the myCar.color has been updated: myCar.color now = " + myCar.color);     // Tests in Main() that myCar.color has been updated
     }
         
         /* The code block below inserted here to run two test cases for Discussion 4 - Software Testing
