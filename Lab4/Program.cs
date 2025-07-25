@@ -1,4 +1,5 @@
-﻿using System.Dynamic;
+﻿using System.Drawing;
+using System.Dynamic;
 using Microsoft.VisualBasic;
 
 namespace Lab4;
@@ -37,16 +38,16 @@ class Car
     // Lab 4, Problem 3: Add a Method with a Return Value; called from Main()
     public string GetDescription()
     {
-        return year + " " + color + " " + model;
+        return year + " " + color + " " + model;    /* Applying the "Separation of Concerns" principle such that only the return is executed by the method; the result is printed in Main().
+                                                        This is done as the car description may be needed more globally in Main() (e.g., a report on the car, including its description) */
     }
 
     // Lab 4, Problem 4: Add a Method that Updates a Field; called from Main()
     public void Repaint(string newColor)
     {
-        color = newColor;   // Updates myCar.color to a new color
+        color = newColor;   // Updates myCar.color to a new color, sent in by the user     
         Console.WriteLine();
-        Console.WriteLine("The car has been repainted to " + color);    // Prints the new car color
-        Console.WriteLine("Comfirmation that myCar.color has been updated to: " + color);   // Prints myCar.color to confirm that it has been updated
+        Console.WriteLine("The car has been repainted to " + color);    // Prints the confirmation message that the color field has been updated
     }
 }
 
@@ -60,15 +61,18 @@ class Program
         myCar.color = "Black";
         myCar.year = 2020;
 
-        myCar.Display(); // Calling the Display method
-        myCar.Start();  // Calling the Start method
-        myCar.Drive(50);  // Calling the Drive method
+        myCar.Display(); // Calls the Display method
+
+        myCar.Start();  // Calls the Start method
+
+        myCar.Drive(50);  // Calls the Drive method, sending in an argument of '50'
 
         string desc = myCar.GetDescription();   // Calls the GetDescription method and stores the returned string in the variable 'desc'
         Console.WriteLine();
-        Console.WriteLine(desc);    // Prints the variable with the stored return value
+        Console.WriteLine(desc);    // Prints the variable 'desc' containing the stored return value
 
         myCar.Repaint("red");   // Calls the Repaint method to change the car color, and confirm that the color field has been updated
+        Console.WriteLine("Test in Main() that the color field has been updated: myCar.color now = " + myCar.color);     // Tests in Main() that myCar.color has been updated
     }
         
         /* The code block below inserted here to run two test cases for Discussion 4 - Software Testing
