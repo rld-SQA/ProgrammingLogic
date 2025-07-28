@@ -1,0 +1,15 @@
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.AssemblyInfoInputs.cache
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.AssemblyInfo.cs
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.csproj.CoreCompileInputs.cache
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.sourcelink.json
+/workspaces/ProgrammingLogic/Discussion5/bin/Debug/net8.0/Discussion5
+/workspaces/ProgrammingLogic/Discussion5/bin/Debug/net8.0/Discussion5.deps.json
+/workspaces/ProgrammingLogic/Discussion5/bin/Debug/net8.0/Discussion5.runtimeconfig.json
+/workspaces/ProgrammingLogic/Discussion5/bin/Debug/net8.0/Discussion5.dll
+/workspaces/ProgrammingLogic/Discussion5/bin/Debug/net8.0/Discussion5.pdb
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.dll
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/refint/Discussion5.dll
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.pdb
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/Discussion5.genruntimeconfig.cache
+/workspaces/ProgrammingLogic/Discussion5/obj/Debug/net8.0/ref/Discussion5.dll

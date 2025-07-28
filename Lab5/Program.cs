@@ -1,4 +1,6 @@
-﻿namespace Lab5;
+﻿using System.Linq.Expressions;
+
+namespace Lab5;
 
 /* Name: Rich DeLoof
    Title: IT-1050 - Lab 5: Illustrates inheritance and runtime polymorphism, using overriden methods and base class references. */
